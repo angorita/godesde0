@@ -1,6 +1,4 @@
-# godesde0
-Repositorio de curso de Golang desde 0
-go mod init github.com/angorita/godesde0
+package main
 import(
 	"github.com/angorita/godesde0/variables"
 )

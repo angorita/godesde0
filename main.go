@@ -4,4 +4,5 @@ import(
 )
 func main() {
 	variables.MostrarEnteros()
+	variables.RestoVariables()
 }

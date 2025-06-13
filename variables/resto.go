@@ -23,6 +23,7 @@ func RestoVariables(){
 }
 func ConviertoaTexto(numero int)(bool,string){
 	texto:=strconv.Itoa(numero)
+	fmt.Print("oscar angarita")
 	return true,texto
 
 }

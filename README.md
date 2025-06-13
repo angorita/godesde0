@@ -1,6 +1,24 @@
 # godesde0
+git
+***
+oaangarita@yahoo.com.ar
+Mengeche2025
+username:angorita
+
+primero creo un repositorio en github.com
+
 Repositorio de curso de Golang desde 0
+
+despues en la terminal 
+git clone http://github.com/angorita/godesde0 
+me ubico en el directorio creado  
+y  pongo code .
+para ingresar directamente al programa que voy hacer
+una vez ahi hago un go mod como abajo
+
 go mod init github.com/angorita/godesde0
+creo una carpeta variables
+y la accedo desde 
 import(
 	"github.com/angorita/godesde0/variables"
 )

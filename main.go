@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/angorita/godesde0/ejercicios"
+"github.com/angorita/godesde0/funciones"
 )
 
 func main() {
@@ -34,7 +34,9 @@ func main() {
 		iteraciones.Iterar()
 		iteraciones.IterarBreak()
 		iteraciones.IterarContinue()
-	*/
-	ejercicios.Tablas(6)
-	ejercicios.Ingreso()
+		ejercicios.Tablas(6)
+		ejercicios.Ingreso()
+		*/
+		funciones.funcionesAnonimas()
+
 }

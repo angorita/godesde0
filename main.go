@@ -1,9 +1,6 @@
 package main
 
 import (
-	"fmt"
-
-	// "github.com/angorita/godesde0/variables"
 	"github.com/angorita/godesde0/ejercicios"
 )
 
@@ -19,7 +16,25 @@ func main() {
 		} else {
 			fmt.Println("Esto es Linux")
 		}
+		switch runtime.GOOS {
+		case "linux":
+			fmt.Println("Esto es linux")
+		case "Darwin":
+			fmt.Println("Esto es darwin")
+		case "Windows":
+			fmt.Println("Esto es windows")
+		default:
+			fmt.Println("Niguna es correcta")
+
+		}
+		texto1, valor := ejercicios.AtoiIf("11c")
+		fmt.Println(texto1, valor)
+		teclado.IngresoNumeros()
+
+		iteraciones.Iterar()
+		iteraciones.IterarBreak()
+		iteraciones.IterarContinue()
 	*/
-	texto, valor := ejercicios.AtoiIf("101")
-	fmt.Println(texto, valor)
+	ejercicios.Tablas(6)
+	ejercicios.Ingreso()
 }

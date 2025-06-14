@@ -8,7 +8,7 @@ import (
 )
 // func que reciba un int, valide si error o no y que vuelva a pedirlo
 // crear la tabla numerica del mismo de 1 a 10 y la muestre por pantalla
-// en main la llamo solicitar leer proceso imprimir
+// en main la llamo solicitar leer proceso imprimir hay llamados a otras funciones
 func Tablas(tabla int) (int, error) {
 	fmt.Println("Esta es la tabla del : ", tabla)
 	for i := 1; i < 11; i += 1 {

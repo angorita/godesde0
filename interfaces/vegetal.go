@@ -1,5 +1,6 @@
 package interfaces
 
 type Vegetal interface{
-	ClasificacionVegetal()
+	ClasificacionVegetal()string
+	EstaVivo()bool
 }

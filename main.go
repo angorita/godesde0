@@ -1,7 +1,8 @@
 package main
 
 import (
-"github.com/angorita/godesde0/users"
+	e "github.com/angorita/godesde0/ejer_interfaces"
+	"github.com/angorita/godesde0/modelos"
 )
 
 func main() {
@@ -42,7 +43,11 @@ func main() {
 		arreglosslices.MuestroArreglos()
 		arreglosslices.MuestoSlice() //ajusta automaticamente...
 		arreglosslices.MostrarMapas()
+		users.AltaUsuario()
 	*/
-	users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+	Gabita := new(modelos.Mujer)
+	e.HumanosRespirando(Gabita)
 
 }

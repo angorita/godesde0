@@ -1,7 +1,9 @@
 package main
-import(
-"github.com/angorita/godesde0/arreglos_slices/mapas"
+
+import (
+"github.com/angorita/godesde0/users"
 )
+
 func main() {
 	/*
 		variables.MostrarEnteros()
@@ -39,7 +41,8 @@ func main() {
 		funciones.Exponencia(2)
 		arreglosslices.MuestroArreglos()
 		arreglosslices.MuestoSlice() //ajusta automaticamente...
+		arreglosslices.MostrarMapas()
 	*/
-	arreglosslices.MostrarMapas()
+	users.AltaUsuario()
 
 }

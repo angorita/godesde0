@@ -4,15 +4,15 @@ import "time"
 
 // estructuras
 type User struct {
-	Id       int
+	Id       int 
 	Name     string
-	CreateAt time.Time
+	CreateAt time.Time//en que fecha fue creado...
 	Status   bool
 }
-
-func (this User) AddUser(id int, name string, createdAt time.Time, status bool) {
-	this.Id = id
-	this.Name = name
-	this.CreateAt = createdAt
-	this.Status = status
+//el profe uso this.Id, etc..User es un puntero 
+func (u *User) AddUser(id int, name string, createdAt time.Time, status bool) {
+	u.Id = id
+	u.Name = name
+	u.CreateAt = createdAt
+	u.Status = status
 }

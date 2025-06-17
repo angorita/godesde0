@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-
-	"github.com/angorita/godesde0/ejercicios"
 )
 
 var num1, num2 int

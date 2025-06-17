@@ -1,9 +1,7 @@
 package main
-
-import (
-"github.com/angorita/godesde0/funciones"
+import(
+"github.com/angorita/godesde0/arreglos_slices/mapas"
 )
-
 func main() {
 	/*
 		variables.MostrarEnteros()
@@ -36,7 +34,12 @@ func main() {
 		iteraciones.IterarContinue()
 		ejercicios.Tablas(6)
 		ejercicios.Ingreso()
-		*/
-		funciones.funcionesAnonimas()
+		funciones.Calculos()
+		funciones.LlamarClosure()
+		funciones.Exponencia(2)
+		arreglosslices.MuestroArreglos()
+		arreglosslices.MuestoSlice() //ajusta automaticamente...
+	*/
+	arreglosslices.MostrarMapas()
 
 }

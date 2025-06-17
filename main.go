@@ -1,10 +1,7 @@
 package main
-
-import (
-	e "github.com/angorita/godesde0/ejer_interfaces"
-	"github.com/angorita/godesde0/modelos"
+import(
+	e"github.com/angorita/godesde0/defer_panic"
 )
-
 func main() {
 	/*
 		variables.MostrarEnteros()
@@ -44,10 +41,11 @@ func main() {
 		arreglosslices.MuestoSlice() //ajusta automaticamente...
 		arreglosslices.MostrarMapas()
 		users.AltaUsuario()
+		Pedro := new(modelos.Hombre)
+		e.HumanosRespirando(Pedro)
+		Gabita := new(modelos.Mujer)
+		e.HumanosRespirando(Gabita)
 	*/
-	Pedro := new(modelos.Hombre)
-	e.HumanosRespirando(Pedro)
-	Gabita := new(modelos.Mujer)
-	e.HumanosRespirando(Gabita)
-
+e.VemosDefer()
+e.EjemploPanic()
 }

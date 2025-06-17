@@ -45,7 +45,7 @@ func main() {
 		e.HumanosRespirando(Pedro)
 		Gabita := new(modelos.Mujer)
 		e.HumanosRespirando(Gabita)
+		e.VemosDefer()
+		e.EjemploPanic()
 	*/
-e.VemosDefer()
-e.EjemploPanic()
 }

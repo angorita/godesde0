@@ -1,7 +1,11 @@
 package main
-import(
-	e"github.com/angorita/godesde0/defer_panic"
+
+import (
+	"fmt"
+
+	"github.com/angorita/godesde0/goroutines"
 )
+
 func main() {
 	/*
 		variables.MostrarEnteros()
@@ -48,4 +52,12 @@ func main() {
 		e.VemosDefer()
 		e.EjemploPanic()
 	*/
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLentoo("Oscar", canal1)
+	// var x string
+	// fmt.Scanln(&x)//cuando aprete enter se cierra excepto por los canales
+	defer func(){<-canal1}() //ahora es el canal el que envia informacion
+	//usando defer impide que haya algun canal abierto 
+
+	fmt.Println("Estoy aqui",canal1)
 }

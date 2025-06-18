@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/angorita/godesde0/goroutines"
+	"github.com/angorita/godesde0/webserver"
 )
 
 func main() {
@@ -51,13 +49,14 @@ func main() {
 		e.HumanosRespirando(Gabita)
 		e.VemosDefer()
 		e.EjemploPanic()
-	*/
-	canal1 := make(chan bool)
-	go goroutines.MiNombreLentoo("Oscar", canal1)
-	// var x string
-	// fmt.Scanln(&x)//cuando aprete enter se cierra excepto por los canales
-	defer func(){<-canal1}() //ahora es el canal el que envia informacion
-	//usando defer impide que haya algun canal abierto 
+		canal1 := make(chan bool)
+		go goroutines.MiNombreLentoo("Oscar", canal1)
+		// var x string
+		// fmt.Scanln(&x)//cuando aprete enter se cierra excepto por los canales
+		defer func(){<-canal1}() //ahora es el canal el que envia informacion
+		//usando defer impide que haya algun canal abierto
 
-	fmt.Println("Estoy aqui",canal1)
+		fmt.Println("Estoy aqui",canal1)
+	*/
+	webserver.MiWebServer()
 }

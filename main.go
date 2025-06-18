@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/angorita/godesde0/webserver"
+	"github.com/angorita/godesde0/middleware"
 )
 
 func main() {
@@ -57,6 +57,7 @@ func main() {
 		//usando defer impide que haya algun canal abierto
 
 		fmt.Println("Estoy aqui",canal1)
+		webserver.MiWebServer()
 	*/
-	webserver.MiWebServer()
+	middleware.MiMiddleware()
 }
